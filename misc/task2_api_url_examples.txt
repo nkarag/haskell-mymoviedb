@@ -1,0 +1,44 @@
+https://api.themoviedb.org/3/search/movie?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&query=Jack+Reacher
+
+https://api.themoviedb.org/3/discover/movie?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&query=Jack+Reacher
+
+https://api.themoviedb.org/3/discover/movie?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&primary_release_date.gte=2018-01-01&primary_release_date.lte=2018-06-01
+
+
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-US&page=1
+
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-US&page=1
+
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-US&region=greece&page=1
+
+-- get movies currently playing in Greece
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=GR&page=1
+
+
+
+--  The application must retrieve a list of the movies currently in theaters in a configurable list of 
+-- countries (initially United States, United Kingdom, Canada, Greece). (check: https://developers.themoviedb.org/3/getting-started/regions)
+https://api.themoviedb.org/3/discover/movie?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=GR|US|GB|CA&release_date.gte=2018-05-17&release_date.lte=2018-05-31&with_release_type=2|3
+https://api.themoviedb.org/3/discover/movie?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=GR|US|GB|CA&with_release_type=2|3&status="In Production"
+
+---------------------------
+
+-- get movies currently playing in  United States, United Kingdom, Canada, Greece
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=GR|US|GB|CA&page=1
+Per Country
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=GR&page=1
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=US&page=1
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=GB&page=1
+https://api.themoviedb.org/3/movie/now_playing?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-UK&region=CA&page=1
+
+-- get Genres_Dim
+https://api.themoviedb.org/3/genre/movie/list?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-US
+
+-- Movies Dim - get details about a specific movie/list (e.g., origin_country, release_date) 
+https://api.themoviedb.org/3/movie/299536?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-US
+
+-- get reviews for a specific movie
+https://api.themoviedb.org/3/movie/299536/reviews?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c&language=en-US&page=1
+
+-- get details for a specific review (search by review id)
+https://api.themoviedb.org/3/review/5ae0a3d20e0a26156301455e?api_key=bbb0e77b94b09193e6f32d5fac7a3b9c
