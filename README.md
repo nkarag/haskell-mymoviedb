@@ -1,6 +1,6 @@
 ﻿# mymoviedb
 
-A Haskell app that retrieves movie information from [The Movie DB](https://www.themoviedb.org).
+A Haskell ETL app that retrieves movie information from [The Movie DB](https://www.themoviedb.org).
 The app uses the [movieDB API](https://developers.themoviedb.org/3/getting-started) , in order to retrieve the data in JSON format. Then the data are parsed and then transformed and finally stored in a star schema in a Postgresql database for analytics queries, via a daily load ETL process. This app essentially implements this daily ETL process.
 In the 	**data_model.pptx** presentation found in the misc/ directory you can see an overview of the target data model.
 Also, in the same folder you can find the DDL script (misc/**ddl_script.sql**) for creating this data model in Postgresql).
